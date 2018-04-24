@@ -1,5 +1,5 @@
 watch: build
-	fswatch -0 three.js/src/*/*.js aframe/src/*.js babylon.js/src/*.js | xargs -0 -n 1 -I {} make build
+	fswatch three.js/src/*/*.js aframe/src/*.js babylon.js/src/*.js | xargs -0 -n 1 -I {} make build
 	
 build:
 	cd three.js && make build
